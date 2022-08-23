@@ -22,7 +22,7 @@ export default class App extends Component {
 
     //Index.tsx Axios üçün default localhost vermişəm.
     // localhost/* dan sonra gələni yaz bura.
-    axios.get('user').then(
+    axios.get('users').then(
       res => {
         this.setState({
           user: res.data

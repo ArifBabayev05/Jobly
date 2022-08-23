@@ -15,7 +15,7 @@ export default class Register extends Component {
 
         //Index.tsx Axios üçün default localhost vermişəm.
         // localhost/* dan sonra gələni yaz bura.
-        axios.post('register', data)
+        axios.post('users', data)
             .then(res => {
                 console.log(res)
             }).catch(err => { console.log(err) })

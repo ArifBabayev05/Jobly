@@ -13,7 +13,7 @@ export default class Login extends Component {
 
      //Index.tsx Axios üçün default localhost vermişəm.
     // localhost/* dan sonra gələni yaz bura.
-    axios.post('login', data)
+    axios.post('users', data)
       .then(res => {
         localStorage.setItem('token', res.data.token)
       }).catch(err => { console.log(err) })
